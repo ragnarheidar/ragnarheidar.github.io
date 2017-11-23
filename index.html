@@ -135,7 +135,7 @@
                             return L.marker(latlng, { icon: inactive_icon, title: feature.properties.Name, riseOnHover: true })
                         },
                         onEachFeature: function(feature, layer) {
-                            layer.bindPopup(feature.properties.spacename + "<audio id=sound controls=controls ><source src=" + feature.properties.filename + " type=audio/mp3></audio>");
+                            layer.bindPopup(feature.properties.spacename + "<audio id=sound controls=controls ><source src=audio/" + feature.properties.filename + " type=audio/mp3></audio>");
                         },
                     });
 
@@ -147,7 +147,7 @@
                             return L.marker(latlng, { icon: active_icon, title: feature.properties.Name + " - Currently Active" })
                         },
                         onEachFeature: function(feature, layer) {
-                            layer.bindPopup(feature.properties.spacename + "<audio id=sound controls=controls ><source src=" + feature.properties.filename + " type=audio/mp3></audio>");
+                            layer.bindPopup(feature.properties.spacename + "<audio id=sound controls=controls ><source src=audio/" + feature.properties.filename + " type=audio/mp3></audio>");
                         },
                     });
 
