@@ -1,0 +1,532 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Þeistareykir",
+        "spacename": "Þeistareykir | Theista - reykir",
+        "volc_id": 121,
+        "filename": "The121.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.036609,
+          65.890639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Krafla",
+        "spacename": "Krafla",
+        "volc_id": 131,
+        "filename": "Kra131.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.794823,
+          65.730676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Heiðarsporðar",
+        "spacename": "Heiðarsporðar | Heidar - spordar",
+        "volc_id": 130,
+        "filename": "Hei130.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.830538,
+          65.579227
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Fremrinámur",
+        "spacename": "Fremrinámur | Fremri - namur",
+        "volc_id": 129,
+        "filename": "Fre129.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.672169,
+          65.424915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Askja",
+        "spacename": "Askja",
+        "volc_id": 128,
+        "filename": "Ask128.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.715275,
+          65.059858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Kverkfjöll",
+        "spacename": "Kverkfjöll | Kverk - fjoll",
+        "volc_id": 126,
+        "filename": "Kve126.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.645641,
+          64.65693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Snæfell",
+        "spacename": "Snæfell | Snae - fell",
+        "volc_id": 127,
+        "filename": "Sna127.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.553393,
+          64.818926
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Esjufjöll",
+        "spacename": "Esjufjöll | Esju - fjoll",
+        "volc_id": 125,
+        "filename": "Esj125.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.494029,
+          64.300995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Öræfajökull",
+        "spacename": "Öræfajökull | Oraefa - jokull",
+        "volc_id": 124,
+        "filename": "Ora124.mp3",
+        "active": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.649911,
+          64.01385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Grímsvötn",
+        "spacename": "Grímsvötn | Grims - votn",
+        "volc_id": 122,
+        "filename": "Gri122.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.351425,
+          64.412945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Þórðarhyrna",
+        "spacename": "Þórðarhyrna | Thordar - hyrna",
+        "volc_id": 123,
+        "filename": "Tho123.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.545059,
+          64.282057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Tungnafellsjökull",
+        "spacename": "Tungnafellsjökull | Tungna - fells - jokull",
+        "volc_id": 120,
+        "filename": "Tun120.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.908892,
+          64.750491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Hofsjökull",
+        "spacename": "Hofsjökull | Hofs - jokull",
+        "volc_id": 119,
+        "filename": "Hof119.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -18.909075,
+          64.797205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Kerlingarfjöll",
+        "spacename": "Kerlingarfjöll | Kerlingar - fjoll",
+        "volc_id": 112,
+        "filename": "Ker112.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -19.230688,
+          64.649904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Katla",
+        "spacename": "Katla",
+        "volc_id": 118,
+        "filename": "Kat118.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -19.079311,
+          63.62575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Torfajökull",
+        "spacename": "Torfajökull | Torfa - jokull",
+        "volc_id": 117,
+        "filename": "Tor117.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -19.160181,
+          63.961725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Tindfjöll",
+        "spacename": "Tindfjöll | Tind - fjoll",
+        "volc_id": 115,
+        "filename": "Tin115.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -19.546033,
+          63.786102
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Eyjafjallajökull",
+        "spacename": "Eyjafjallajökull | Eyja - fjalla - jokull",
+        "volc_id": 114,
+        "filename": "Eyj114.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -19.638796,
+          63.642372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Oddnýjarhnúkur",
+        "spacename": "Oddnýjarhnúkur | Oddnyjar - hnjukur",
+        "volc_id": 111,
+        "filename": "Odd111.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -19.712543,
+          64.866726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Hekla",
+        "spacename": "Hekla",
+        "volc_id": 116,
+        "filename": "Hek116.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -19.679661,
+          64.007676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Vestmannaeyjar",
+        "spacename": "Vestmannaeyjar | Vest - manna - eyjar",
+        "volc_id": 113,
+        "filename": "Ves113.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -20.249668,
+          63.453183
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Prestahnúkur",
+        "spacename": "Prestahnúkur | Presta - hnukur",
+        "volc_id": 110,
+        "filename": "Pre110.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -20.667177,
+          64.597922
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Grímsnes",
+        "spacename": "Grímsnes | Grims - nes",
+        "volc_id": 109,
+        "filename": "Gri109.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -20.947696,
+          64.038848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Hrómundartindur",
+        "spacename": "Hrómundartindur | Hro - mundar - tindur",
+        "volc_id": 108,
+        "filename": "Hro108.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.211218,
+          64.082542
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Hengill",
+        "spacename": "Hengill",
+        "volc_id": 107,
+        "filename": "Hen107.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.287482,
+          64.086103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Krýsuvík",
+        "spacename": "Krýsuvík | Krysu - vik",
+        "volc_id": 106,
+        "filename": "Kry106.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.795185,
+          63.953635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Brennisteinsfjöll",
+        "spacename": "Brennisteinsfjöll | Brenni - steins - fjoll",
+        "volc_id": 105,
+        "filename": "Bre105.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -22.103116,
+          63.904544
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Reykjanes",
+        "spacename": "Reykjanes | Reykja - nes",
+        "volc_id": 104,
+        "filename": "Rey104.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -22.485357,
+          63.865457
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Eldey",
+        "spacename": "Eldey | Eld - ey",
+        "volc_id": 103,
+        "filename": "Eld103.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -22.977538,
+          63.754537
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Ljósufjöll",
+        "spacename": "Ljósufjöll | Ljosu - fjoll",
+        "volc_id": 102,
+        "filename": "Ljo102.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -22.657301,
+          64.918479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Bárðarbunga",
+        "spacename": "Bárðarbunga | Bardar - bunga",
+        "volc_id": 132,
+        "filename": "Bar121.mp3",
+        "active": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.514891,
+          64.637857
+        ]
+      }
+    }
+  ]
+}
