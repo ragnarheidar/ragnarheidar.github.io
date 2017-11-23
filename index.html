@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- This is a leaflet map created by Ragnar Heidar Thrastarson  -->
+
+<html>
+<head>
+    
+    <title>Icelandic Volcanoes | Learn to pronounce them BEFORE they erupt</title>
+    
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/lvoogdt/Leaflet.awesome-markers/2.0/develop/dist/leaflet.awesome-markers.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans|Roboto">
+
+	<style>
+      
+        /* style for map body */
+        html, body { 
+            height: 100%; 
+            width: 100%; 
+            margin: 0; 
+        }
+
+        /* style for title */
+        .map_title { 
+            font-size: 26px;
+            font-family: 'Droid Sans', sans-serif;  
+            position: absolute;
+            top:0;
+            left: 0;
+            right: 0;
+            height: 28px;
+            z-index: 10;
+            background-color: rgba(0,0,0,0.5);
+            color: #A03336;
+            padding: 6px;
+            margin: 0px;
+            text-align: center;
+        }
+
+        /* style for leaflet map */
+        #map { 
+            position: absolute;
+            top:0;
+            left: 0;
+            right: 0;
+            bottom:0;
+            z-index: 1;
+        }
+				
+        /* style for leaflet popup contents */
+        .leaflet-popup-content {
+            font-family: 'Roboto', sans-serif;			
+            font-size: 16px;
+            color: #C8C7C7;
+            text-align: center;
+            line-height: 250%;
+            margin: 6px;			
+        }
+		
+        /* style for leaflet popup wrapper */
+        .leaflet-popup-content-wrapper {
+            background: #211D1E;
+            width: 320px;            
+        }
+        
+        /* style for markers */
+        .awesome-marker i {
+            font-size: 20px;
+            margin-top: 8px;
+        }
+        
+    </style>
+    
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<script type="text/javascript" src="https://cdn.rawgit.com/leaflet-extras/leaflet-providers/master/leaflet-providers.js"></script> 
+	<script type="text/javascript" src="https://cdn.rawgit.com/lvoogdt/Leaflet.awesome-markers/2.0/develop/dist/leaflet.awesome-markers.min.js" ></script>
+
+    
+</head>
+
+<body>
+	<p class="map_title">Icelandic Volcanoes | Learn to pronounce them BEFORE they erupt</p>
+	<div id="map"></div>
+
+	<script type='text/javascript'>
+	
+        var map = L.map('map', { zoomControl:false }).setView([64.99, -18.59], [7]);
+
+        //links and sources for attributes
+        signature ='<a href="http://lifeofamapmaker.com/" target="_blank"><img src="signature.png">'; //signature png and hyperlink for attributes
+        metoffice ='<a href="http://en.vedur.is/earthquakes-and-volcanism/volcanic-eruptions/" target="_blank">Icelandic Met Office</a>'; //Icelandic Met Office text and link for attributes
+ 
+        //add provider tile layer to map
+		L.tileLayer.provider("Esri.WorldImagery", {
+        	    maxZoom: 8, //set maximum zoom-in
+        	    minZoom: 2  //set maximum zoom-out
+        	}).addTo(map);
+    
+        //populate attribute line
+        map.attributionControl.addAttribution(metoffice); // add Icelandic Met Office to attribute line
+        map.attributionControl.addAttribution(signature); // add signature PNG to attribute line
+
+		//define marker icon for inactive volcanoes using Leaflet Awesome
+        var inactive_icon = L.AwesomeMarkers.icon({
+           	icon: 'play-circle', 
+           		prefix: 'fa', 
+           		markerColor: 'darkred', 
+           		iconColor: '#000'
+        });
+       
+		//define marker icon for active volcanoes using Leaflet Awesome
+        var active_icon = L.AwesomeMarkers.icon({
+        	icon: 'play-circle', 
+           		prefix: 'fa', 
+           		markerColor: 'lightred', 
+           		iconColor: '#000' 
+        });
+
+        	//Get features from GeoJSON file
+            $.getJSON("IcelandicVolcanoes.json", function(data) {
+            //console.log("sucsess");
+     
+                $.each(data.features, function(index, feature){
+                //console.log(index, feature);
+
+                    var inactive = L.geoJson(data, {
+                        filter: function(feature, layer) {
+                            return feature.properties.active == "no";
+                        },
+                        pointToLayer: function(feature, latlng) {
+                            return L.marker(latlng, { icon: inactive_icon, title: feature.properties.Name, riseOnHover: true })
+                        },
+                        onEachFeature: function(feature, layer) {
+                            layer.bindPopup(feature.properties.spacename + "<audio id=sound controls=controls ><source src=" + feature.properties.filename + " type=audio/mp3></audio>");
+                        },
+                    });
+
+                    var active = L.geoJson(data, {
+                        filter: function(feature, layer) {
+                            return feature.properties.active == "yes";
+                        },
+                        pointToLayer: function(feature, latlng) {
+                            return L.marker(latlng, { icon: active_icon, title: feature.properties.Name + " - Currently Active" })
+                        },
+                        onEachFeature: function(feature, layer) {
+                            layer.bindPopup(feature.properties.spacename + "<audio id=sound controls=controls ><source src=" + feature.properties.filename + " type=audio/mp3></audio>");
+                        },
+                    });
+
+                    inactive.addTo(map); //add markes for inactive volcanoes
+                    active.addTo(map); //add markes for active volcanoes
+                });
+
+            });
+
+	</script>
+
+</body>
+</html>
