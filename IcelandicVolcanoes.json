@@ -144,7 +144,7 @@
         "spacename": "Öræfajökull | Oraefa - jokull",
         "volc_id": 124,
         "filename": "Ora124.mp3",
-        "active": "yes"
+        "active": "no"
       },
       "geometry": {
         "type": "Point",
