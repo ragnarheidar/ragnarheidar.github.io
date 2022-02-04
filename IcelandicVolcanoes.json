@@ -76,7 +76,7 @@
         "spacename": "Askja",
         "volc_id": 128,
         "filename": "Ask128.mp3",
-        "active": "no"
+        "active": "yes"
       },
       "geometry": {
         "type": "Point",
@@ -433,7 +433,7 @@
         "spacename": "Krýsuvík | Krysu - vik",
         "volc_id": 106,
         "filename": "Kry106.mp3",
-        "active": "no"
+        "active": "yes"
       },
       "geometry": {
         "type": "Point",
